@@ -50,8 +50,8 @@
     }
 
     .image-particle {
-      max-width: 100px;
-      max-height: 100px;
+      max-width: 120px;
+      max-height: 120px;
       border-radius: 5px;
       filter: drop-shadow(0 0 4px #fff);
     }
@@ -119,9 +119,9 @@
     function loopParticles() {
       let last = 0;
       function tick(t) {
-        if (t - last > 323) {
+        if (t - last > 350) {
           createParticle('text');
-          if (Math.random() < 0.25) createParticle('image');
+          if (Math.random() < 0.3) createParticle('image');
           last = t;
         }
         requestAnimationFrame(tick);
@@ -214,3 +214,4 @@
   </script>
 </body>
 </html>
+
